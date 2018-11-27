@@ -1,0 +1,34 @@
+*{
+	margin:0;
+	padding: 0;
+	outline: 0;
+}
+
+body{
+	font-family: arial;
+	font-size: 18px;
+	color: #000;
+	line-height: 18px;
+}
+
+.content{
+	background-color: #ccc;
+	width: 80%;
+	margin: 10px auto;
+}
+.main-content{
+	background-color: #fff;
+	/*width: 79%;*/
+	height:450px;
+	margin: 10px auto;
+	padding: 10px;
+
+}
+section{
+	padding: 10px;
+	border-radius: 1rem;
+}
+.header, .footer{
+	text-align: center;
+	padding: 10px 0px;
+}
