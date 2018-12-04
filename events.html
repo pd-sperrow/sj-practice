@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> js fundamantal practice </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            outline: 0;
+        }
+
+        body{
+            font-family: arial;
+            font-size: 18px;
+            color: #000;
+            line-height: 18px;
+        }
+
+        .content{
+            background-color: #ccc;
+            width: 80%;
+            margin: 10px auto;
+        }
+        .main-content{
+            background-color: #fff;
+            /*width: 79%;*/
+            height:450px;
+            margin: 10px auto;
+            padding: 10px;
+
+        }
+        section{
+            padding: 10px;
+            border-radius: 1rem;
+        }
+        .header, .footer{
+            text-align: center;
+            padding: 10px 0px;
+        }
+            
+        </style>
+</head>
+<body>
+
+	<section class="content">
+		<div class="header">
+			<h2><script> document.write("Tutorial JS Fundamentals 'events'");</script></h2>
+		</div>
+
+		<div class="main-content">
+			<button onclick="onclickEvent()">click here</button>
+			<button onmouseover="onmouseoverEvent()">hover here</button>
+			<button onmouseup="onmouseupEvent()">onmouseup here</button>
+			<button onkeydown="onmousedownEvent()">onkeydown here</button>
+            <input onkeypress="onkeypressEvent()" placeholder="onkeypress here"/>
+            <input type="text" onfocus="onfocusEvent()" placeholder="onfocus here">
+
+            <p id="show"></p>
+			<script>
+                "use strict";
+                function onclickEvent(){
+                    document.getElementById("show").innerHTML="event is onclick";
+                }
+                function onmouseoverEvent(){
+                    document.getElementById("show").innerHTML="event is onmouseover";
+                }
+                function onmouseupEvent(){
+                    document.getElementById("show").innerHTML="event is onmouseup";
+                }
+                function onmousedownEvent(){
+                    document.getElementById("show").innerHTML="event is onkeydown";
+                }
+                function onkeypressEvent(){
+                    document.getElementById("show").innerHTML="event is onkeypress";
+                }
+                function onfocusEvent(){
+                    document.getElementById("show").innerHTML="event is onfocus";
+                }
+				
+
+				
+
+
+			</script>
+			
+		</div>
+
+		<div class="footer">
+			<h2><script> document.write("sperrow js practice"); </script></h2>
+		</div>
+	</section>
+
+</body>
+</html>
